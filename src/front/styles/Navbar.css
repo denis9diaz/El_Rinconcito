@@ -1,0 +1,55 @@
+.navbar {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+}
+
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+}
+
+.navbar a:hover, .navbar a:focus, .navbar a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar .underline-hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.4s ease-out;
+}
+
+.navbar .underline-hover:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.navbar-toggler {
+    color: rgb(0, 0, 0);
+}
+
+.navbar-nav {
+    justify-content: center;
+    width: 100%;
+}
+
+.no-underline {
+    text-decoration: none;
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: space-around;
+}
