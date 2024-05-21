@@ -4,13 +4,13 @@ import ScrollToTop from "./component/scrollToTop";
 import { BackendURL } from "./component/backendURL";
 import injectContext from "./store/appContext";
 
-import { Navbar } from "./component/navbar";
-import { Footer } from "./component/footer";
+import Footer from "./component/footer";
 import Home from "./pages/Home.js";
 import Informacion from "./pages/Informacion.js";
 import Galeria from "./pages/Galeria.js";
 import Carta from "./pages/Carta.js";
 import Menus from "./pages/Menus.js";
+import Historia from "./pages/Historia.js";
 
 const Layout = () => {
 
@@ -22,13 +22,13 @@ const Layout = () => {
         <div>
             <BrowserRouter basename={basename}>
                 <ScrollToTop>
-                    <Navbar />
                     <Routes>
                         <Route element={<Home />} path="/" />
                         <Route element={<Informacion />} path="/info" />
                         <Route element={<Galeria />} path="/galeria" />
                         <Route element={<Carta />} path="/carta" />
                         <Route element={<Menus />} path="/menus" />
+                        <Route element={<Historia />} path="/historia" />
                         <Route element={<h1>Not found!</h1>} />
                     </Routes>
                     <Footer />

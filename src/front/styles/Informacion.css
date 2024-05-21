@@ -1,0 +1,21 @@
+.informacion-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.informacion-item {
+    margin: 10px 0;
+    width: 100%;
+    max-width: 600px;
+}
+
+.informacion-item h2 {
+    margin-bottom: 10px;
+}
+
+.info-text {
+    font-size: 17px;
+}
