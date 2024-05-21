@@ -1,12 +1,12 @@
 import React from "react";
 import "../../styles/Historia.css";
 import Navbar from "./Navbar";
+import fondo from "../../img/fondo-info.png";
 
 const Historia = () => {
     return(
-        <div className="principal-section text-center">
+        <div className="historia-div" style={{ backgroundImage: `url(${fondo})` }}>
             <Navbar />
-            <h1>El Rinconcito</h1>
         </div>
     )
 }

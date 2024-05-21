@@ -5,6 +5,11 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import "../../styles/Navbar.css";
 
 const Navbar = () => {
+    const handleReservasClick = () => {
+        const reservasUrl = "https://www.google.com/maps/reserve/v/dine/c/qwfw-fafxvw?source=pa&opi=89978449&hl=es-ES&gei=X8NMZo2GEI2fkdUP2oa8sAw&sourceurl=https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3Ddish%2Breserva%2Bel%2Brinconcito%2Bmadrid%26oq%3Ddish%2Breserva%2Bel%26gs_lcrp%3DEgZjaHJvbWUqBwgCECEYoAEyBggAEEUYOTIHCAEQIRigATIHCAIQIRigAagCALACAA%26pf%3Dop%26sourceid%3Dchrome%26ie%3DUTF-8&ihs=3"; // Reemplaza esta URL con la URL específica para reservas
+        window.open(reservasUrl, "_blank");
+    };
+
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
             <div className="container-fluid">
@@ -30,7 +35,7 @@ const Navbar = () => {
                             <Link className="nav-link active underline-hover" aria-current="page" to="/info">Información</Link>
                         </li>
                     </ul>
-                    <button className="btn btn-outline-light" type="submit">Reservas</button>
+                    <button className="btn btn-outline-light" type="button" onClick={handleReservasClick}>Reservas</button>
                 </div>
             </div>
         </nav>

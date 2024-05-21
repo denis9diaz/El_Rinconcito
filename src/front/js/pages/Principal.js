@@ -4,7 +4,7 @@ import fondo from "../../img/fondo-principal.png";
 import Navbar from "./Navbar";
 
 const Principal = () => {
-    return(
+    return (
         <div className="principal-section text-center" style={{ backgroundImage: `url(${fondo})` }}>
             <div className="overlay"></div>
             <Navbar />
@@ -13,7 +13,7 @@ const Principal = () => {
                 <h3 className="subtitle-div">Marisquería en Madrid</h3>
             </div>
         </div>
-    )
+    );
 }
 
 export default Principal;
