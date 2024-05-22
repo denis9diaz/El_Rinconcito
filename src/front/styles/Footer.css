@@ -1,5 +1,5 @@
 .footer {
-    background: linear-gradient(to bottom, #0f0c00, #3a2f00);
+    background: linear-gradient(to bottom, #0f0c00, #4b4600);
     color: whitesmoke;
     font-family: 'Poppins', sans-serif;
     border-top: 1px solid whitesmoke;
@@ -37,7 +37,7 @@
 }
 
 .footer-icon:hover {
-    color: rgb(179, 143, 26);
+    color: rgb(185, 148, 24);
 }
 
 .footer-bottom {
