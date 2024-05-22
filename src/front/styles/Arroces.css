@@ -1,0 +1,9 @@
+.arroces-div {
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}

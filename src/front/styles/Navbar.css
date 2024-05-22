@@ -1,0 +1,103 @@
+.navbar {
+    position: relative;
+    z-index: 3;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    background-color: transparent;
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+.navbar a:hover {
+    color: black;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.navbar a:hover, .navbar a:focus, .navbar a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar .underline-hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: whitesmoke;
+    transform-origin: bottom right;
+    transition: transform 0.4s ease-out;
+}
+
+.navbar .underline-hover:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.navbar-toggler {
+    color: whitesmoke;
+}
+
+.navbar-nav {
+    justify-content: center;
+    width: 100%;
+}
+
+.no-underline {
+    text-decoration: none;
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-outline-light {
+    color: whitesmoke;
+    border-color: whitesmoke;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.btn-outline-light:hover {
+    color: black;
+    background-color: whitesmoke;
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 992px) {
+    .navbar-nav {
+        text-align: left;
+    }
+
+    .navbar-collapse {
+        justify-content: flex-start;
+    }
+
+    .navbar-nav .nav-item {
+        width: 100%;
+    }
+
+    .navbar-nav .nav-link {
+        padding-left: 15px;
+    }
+
+    .navbar a {
+        font-size: 1rem;
+    }
+}

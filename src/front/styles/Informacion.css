@@ -1,0 +1,41 @@
+.informacion-div {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.informacion {
+    flex-grow: 1;
+    color: whitesmoke;
+    padding-top: 10vw;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.informacion-item {
+    margin: 10px 0;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.informacion-item h2 {
+    margin-bottom: 10px;
+}
+
+.info-text {
+    font-size: 17px;
+}
+
+.div2, .div3 {
+    border-left: 1px solid white !important;
+}
