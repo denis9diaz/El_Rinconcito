@@ -12,7 +12,7 @@ const Footer = () => (
                     <h5 className="footer-title">Contacto</h5>
                     <p className="footer-text"><FontAwesomeIcon icon={faMapMarkerAlt} className="me-1"/> C/ del Padre Claret, 12. Madrid</p>
                     <p className="footer-text"><FontAwesomeIcon icon={faPhone} className="me-1"/> 123456789</p>
-                    <p className="footer-text"><FontAwesomeIcon icon={faEnvelope} className="me-1"/> info@elrinconcito.com</p>
+                    <p className="footer-text"><FontAwesomeIcon icon={faEnvelope} className="me-1"/> elrinconcito@gmail.com</p>
                 </div>
                 <div className="col-md-4 text-left">
                     <h5 className="footer-title">Horario</h5>

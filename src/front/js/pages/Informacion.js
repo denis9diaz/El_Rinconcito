@@ -47,7 +47,7 @@ const Informacion = () => {
                         <div className="informacion-item">
                             <h2>Contacto</h2>
                             <p className="info-text"><FontAwesomeIcon icon={faPhone} className="me-1" /> 123456789</p>
-                            <p className="info-text"><FontAwesomeIcon icon={faEnvelope} className="me-1" /> info@elrinconcito.com</p>
+                            <p className="info-text"><FontAwesomeIcon icon={faEnvelope} className="me-1" /> elrinconcito@gmail.com</p>
                         </div>
                     </div>
                 </div>
