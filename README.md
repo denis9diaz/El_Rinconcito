@@ -11,7 +11,7 @@
 
 <!-- Funcionalidades -->
 1. **Nuestra historia:**
-    - Sección en la que se cuenta los más de 50 años de historia del Restaurante.
+    - Sección en la que se cuenta, mediante imágenes y texto, los más de 50 años de historia del Restaurante.
     <h5 align="center">(En construcción)</h5>
 2. **Carta:**
     - En esta sección puedes navegar por la carta del restaurante. Esta dispuesta de una manera intuitiva y visual, centradonos en la simplicidad y elegancia del diseño.
