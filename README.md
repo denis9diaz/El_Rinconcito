@@ -1,81 +1,65 @@
-# WebApp boilerplate with React JS and Flask API
 
-Build web applications using React.js for the front end and python/flask for your backend API.
+<!-- Descripción -->
+<h1 align="center">El Rinconcito</h1>
+<h3 align="center">Diseño completo de página web personalizada para un restaurante de Madrid</h3>
+<h5 align="center">(En proceso)</h5>
 
-- Documentation can be found here: https://start.4geeksacademy.com/starters/react-flask
-- Here is a video on [how to use this template](https://www.loom.com/share/f37c6838b3f1496c95111e515e83dd9b)
-- Integrated with Pipenv for package managing.
-- Fast deployment to heroku [in just a few steps here](https://start.4geeksacademy.com/backend/deploy-heroku-posgres).
-- Use of .env file.
-- SQLAlchemy integration for database abstraction.
+<!-- Imagen Principal -->
+<p align="center">
+    <img src="https://res.cloudinary.com/dxzhssh9m/image/upload/v1726057419/Captura_de_pantalla_2024-09-11_141816_czjdlz.png" alt="Principal" width="100%"/>
+</p>
 
-### 1) Installation:
+<!-- Funcionalidades -->
+1. **Nuestra historia:**
+    - Sección en la que se cuenta los más de 50 años de historia del Restaurante.
+    <h5 align="center">(En construcción)</h5>
+2. **Carta:**
+    - En esta sección puedes navegar por la carta del restaurante. Esta dispuesta de una manera intuitiva y visual, centradonos en la simplicidad y elegancia del diseño.
+    <p align="center">
+        <img src="https://res.cloudinary.com/dxzhssh9m/image/upload/v1726057425/Captura_de_pantalla_2024-09-11_141846_sx0uyf.png" alt="Formulario para Esconder Tesoros" width="650px"/>
+    </p>
 
-> If you use Github Codespaces (recommended) or Gitpod this template will already come with Python, Node and the Posgres Database installed. If you are working locally make sure to install Python 3.10, Node 
+3. **Menús:**
+    - Esta sección muestra todos los menús disponibles.
+    <h5 align="center">(En construcción)</h5>
 
-It is recomended to install the backend first, make sure you have Python 3.8, Pipenv and a database engine (Posgress recomended)
+4. **Galería:**
+    - Esta sección muestra imágenes de los platos disponibles en la carta, del restaurante y del personal. Divididas en secciones.
+    <p align="center">
+        <img src="https://res.cloudinary.com/dxzhssh9m/image/upload/v1726057419/Captura_de_pantalla_2024-09-11_141937_nkizqz.png" alt="Listado Apuestas" width="650px"/>
+    </p>
 
-1. Install the python packages: `$ pipenv install`
-2. Create a .env file based on the .env.example: `$ cp .env.example .env`
-3. Install your database engine and create your database, depending on your database you have to create a DATABASE_URL variable with one of the possible values, make sure you replace the valudes with your database information:
+5. **Información:**
+    - Aquí se muestra toda la información del restaurante necesaria para que el cliente tenga facilidad tanto para el contacto como para la ubicación e información. Dividida en secciones perfectamente separadas y diferenciandas visualmente.
+    - Conexión con la API de Google Maps para que el usuario pueda ver la ubicación exacta e incluso pueda crear una ruta directamente desde nuestro sitio con Google Maps.
+    <p align="center">
+        <img src="https://res.cloudinary.com/dxzhssh9m/image/upload/v1726057419/Captura_de_pantalla_2024-09-11_142002_hvd23r.png" alt="Rankings de Usuarios" width="650px"/>
+    </p>
 
-| Engine    | DATABASE_URL                                        |
-| --------- | --------------------------------------------------- |
-| SQLite    | sqlite:////test.db                                  |
-| MySQL     | mysql://username:password@localhost:port/example    |
-| Postgress | postgres://username:password@localhost:5432/example |
+6. **Botón de reservas:**
+    - Creado un botón de reservas  en el navbar para que el usuario pueda reservar su mesa directamente desde nuestro sitio. Está conectado con Google y con Dish (plataforma de reservas) a petición de nuestro cliente.
+    <p align="center">
+        <img src="https://res.cloudinary.com/dxzhssh9m/image/upload/v1726057419/Captura_de_pantalla_2024-09-11_142034_nqocmv.png" alt="Perfil de Usuario" width="650px"/>
+    </p>
 
-4. Migrate the migrations: `$ pipenv run migrate` (skip if you have not made changes to the models on the `./src/api/models.py`)
-5. Run the migrations: `$ pipenv run upgrade`
-6. Run the application: `$ pipenv run start`
+7. **Footer:**
+    -  Elegida la información adicional más relevante; horario, contacto y enlaces a las redes sociales.
+      <p align="center">
+        <img src="https://res.cloudinary.com/dxzhssh9m/image/upload/v1726058111/Captura_de_pantalla_2024-09-11_143450_ejwgd4.png" alt="Perfil de Usuario" width="650px"/>
+      </p>
 
-> Note: Codespaces users can connect to psql by typing: `psql -h localhost -U gitpod example`
+<!-- Tecnologías utilizadas -->
+<h3 align="left">Tecnologías utilizadas:</h3>
 
-### Undo a migration
+<!-- Frontend -->
+<h4 align="left">Frontend</h4>
+<p align="left">
+    - React, Javascript, HTML, CSS, Bootstrap
+</p>
 
-You are also able to undo a migration by running
+<!-- Backend -->
+<h4 align="left">Backend</h4>
+<p align="left">
+    - Python, Flask, SQL
+</p>
 
-```sh
-$ pipenv run downgrade
-```
-
-### Backend Populate Table Users
-
-To insert test users in the database execute the following command:
-
-```sh
-$ flask insert-test-users 5
-```
-
-And you will see the following message:
-
-```
-  Creating test users
-  test_user1@test.com created.
-  test_user2@test.com created.
-  test_user3@test.com created.
-  test_user4@test.com created.
-  test_user5@test.com created.
-  Users created successfully!
-```
-
-### **Important note for the database and the data inside it**
-
-Every Github codespace environment will have **its own database**, so if you're working with more people eveyone will have a different database and different records inside it. This data **will be lost**, so don't spend too much time manually creating records for testing, instead, you can automate adding records to your database by editing ```commands.py``` file inside ```/src/api``` folder. Edit line 32 function ```insert_test_data``` to insert the data according to your model (use the function ```insert_test_users``` above as an example). Then, all you need to do is run ```pipenv run insert-test-data```.
-
-### Front-End Manual Installation:
-
--   Make sure you are using node version 14+ and that you have already successfully installed and runned the backend.
-
-1. Install the packages: `$ npm install`
-2. Start coding! start the webpack dev server `$ npm run start`
-
-## Publish your website!
-
-This boilerplate it's 100% read to deploy with Render.com and Heroku in a matter of minutes. Please read the [official documentation about it](https://start.4geeksacademy.com/deploy).
-
-### Contributors
-
-This template was built as part of the 4Geeks Academy [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) by [Alejandro Sanchez](https://twitter.com/alesanchezr) and many other contributors. Find out more about our [Full Stack Developer Course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer), and [Data Science Bootcamp](https://4geeksacademy.com/us/coding-bootcamps/datascience-machine-learning).
-
-You can find other templates and resources like this at the [school github page](https://github.com/4geeksacademy/).
